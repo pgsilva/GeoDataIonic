@@ -7,9 +7,11 @@
 </ion-header>
 
 <ion-content padding>
+    <span>OI AMIGÃO</span>
   <ion-item>
-    <ion-select name="continentes" class="form-control" [(ngModel)]="continente">
-      <ion-option [value]="Africa" selected>Africa</ion-option>
+    <ion-select name="continentes" class="form-control" style="width: 100%;" [(ngModel)]="continente">
+      <ion-option style="width: 100%;" value="" selected>Escolhe um país ae</ion-option>
+      <ion-option [value]="Africa">Africa</ion-option>
       <ion-option [value]="Americas">Americas</ion-option>
       <ion-option [value]="Europa">Europa</ion-option>
       <ion-option [value]="Asia">Asia</ion-option>
