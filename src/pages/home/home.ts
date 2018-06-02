@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { PaisesPage } from '../paises/paises';
+import { AdicionaPaisPage } from '../adiciona-pais/adiciona-pais';
+import { ExibePaisesPage } from '../exibe-pais/exibe-pais';
 
 @Component({
   selector: 'page-home',
@@ -13,7 +14,11 @@ export class HomePage {
 
   }
 
-  listarPaises() {
-    this.navCtrl.push(PaisesPage, {"continente": this.continente})
+  cadastrarPais() {
+    this.navCtrl.push(AdicionaPaisPage);
+  }
+
+  exibirPaises() {
+    this.navCtrl.push(ExibePaisesPage);
   }
 }

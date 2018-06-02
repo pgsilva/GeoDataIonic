@@ -8,17 +8,12 @@
 
 <ion-content padding>
     <span>OI AMIGÃO</span>
-  <ion-item>
-    <ion-select name="continentes" class="form-control" style="width: 100%;" [(ngModel)]="continente">
-      <ion-option style="width: 100%;" value="" selected>Escolhe um país ae</ion-option>
-      <ion-option [value]="Africa">Africa</ion-option>
-      <ion-option [value]="Americas">Americas</ion-option>
-      <ion-option [value]="Europa">Europa</ion-option>
-      <ion-option [value]="Asia">Asia</ion-option>
-      <ion-option [value]="Oceania">Oceania</ion-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <button ion-button (click)="listarPaises()">Buscar</button>
-  </ion-item>
+      <ion-list>
+          <ion-item (click)="cadastrarPais()">
+            <h2>Inserir novo pais</h2>
+          </ion-item>
+          <ion-item (click)="exibirPaises()">
+            <h2>Listar Paises</h2>
+          </ion-item>
+        </ion-list> 
 </ion-content>
